@@ -1,0 +1,70 @@
+.bg-header{
+    background-color: #F9F5FF;
+}
+
+.header-title{
+    background-color: #f3ebff;
+    color: #6941C6;
+    width: fit-content;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+
+
+h1{
+    color: #42307D;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.75rem;
+
+    @media screen and (max-width: 992px) {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+    }
+}
+
+
+.header-desc{
+    color: #6941C6;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+
+    @media screen and (max-width: 992px) {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
+
+.inputBorderColoring{
+    border-color: #D0D5DD;
+}
+
+.inputBorderColoring:focus{
+    box-shadow: none;
+}
+
+i{
+    color: #667085;
+}
+
+::placeholder {
+    color:#667085;
+  }
+
+.input-group{
+filter: drop-shadow(0px 1px 2px #1018280D);
+height: 3rem;
+width: 21%;
+
+@media screen and (max-width: 768px) {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+   width: 50%;
+}
+}

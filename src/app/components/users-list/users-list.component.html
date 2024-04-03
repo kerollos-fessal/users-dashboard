@@ -1,0 +1,38 @@
+<section class="pt-5">
+  <div class="pt-5 container">
+    <div class="row gy-5">
+      <ng-container *ngIf="allUsers.length > 0; else noDataTemplate">
+        <app-single-user
+        class="col-sm-6 col-lg-4 card-justify-height"
+        *ngFor="let user of allUsers | search : searchKey"
+        [user]="user"
+    ></app-single-user>
+      </ng-container>
+      <ng-template #noDataTemplate>
+        <div class="col-9 mx-auto text-center">
+          <app-errors></app-errors>
+        </div>
+      </ng-template>
+      <div *ngIf="
+      !(allUsers.length == 0) &&
+      (allUsers | search : searchKey).length === 0
+    ">
+        <div class="col-9 mx-auto text-center">
+          <div class="alert alert-danger shadow fw-bold py-4 fs-5">
+            No users found!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mx-3 mt-4  border-bottom text-center d-flex justify-content-center border-secondary rounded-2 p-3">
+    <mat-paginator
+      [length]="12"
+      [pageSize]="6"
+      [pageSizeOptions]="[6]"
+      aria-label="Select page"
+      (page)="onPageChange($event)"
+    >
+    </mat-paginator>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+.overlay {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #ede7e7;
+    color: #42307D;
+  }
+  
+  .fa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #42307D;
+    width: 100%;
+  }
+
+
+::ng-deep .mat-mdc-progress-bar{
+  color: #42307D;
+
+}

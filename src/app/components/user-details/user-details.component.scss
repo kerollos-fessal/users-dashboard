@@ -1,0 +1,24 @@
+h1{
+    color: #6941C6;
+    filter: drop-shadow(2px 2px 2px  #6941c6bc);
+    border-bottom: #6941C6 solid 2px;
+}
+
+h3{
+    color: #6941C6;
+    filter: drop-shadow(2px 2px 2px  #6941c6bc);
+    border-bottom: #6941C6 solid 2px;
+}
+
+button{
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: #6941C6 !important;
+}
+
+.back-button{
+    top: 10%;
+    left: 5%;
+}
